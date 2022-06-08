@@ -4,15 +4,19 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+### このブログについて
+記事内容(予定・書いてみたいもの)
+- 自然科学
+  - 数学
+    - 和算：算額の問題や和算家の紹介・解説
+    - 人参：微積分・線形代数のわずかな延長で展開できそうな話を書ければ
+  - 生物学
+    - 進化論：身近な進化論の証拠集め
+- 工学
+  - 情報学
+    - アルゴリズム：「Art of Computer Programming」や「オートマトン　言語理論　計算論」のメモ
+    - IT考古学：ハードウェア寄りに歴史を記述していきたい
+- 人文学
+  - 歴史
+    - 漢詩で追う中国史：漢文書く方法を模索中
+- 雑記
