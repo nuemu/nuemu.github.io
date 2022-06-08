@@ -10,14 +10,18 @@ tags: 数学 和算
 
 > 問：下図のように直角三角形に内接する楕円の長軸の長さを$2a$、短軸の長さを$2b$とする。
 > 直角三角形の底辺を$p$、高さを$q$とした時、$a$を$b,p,q$で表せ。
-
-<script type="text/tikz">
+>
+><div style="display: flex; justify-content: center;">
+><p></p>
+><script type="text/tikz">
 \begin{tikzpicture}
   \draw (-1, 0) -> (2, 0);
   \draw (2, 0) -> (2, 2);
   \draw (2, 2) -> (-1, 0);
   \draw (1, 0.5) circle[x radius=1, y radius=0.5];
 \end{tikzpicture}
-</script>
+></script>
+></div>
+<p></p>
 
-どうでも良い思い出：京都旅行中に、この問題を見に行ってみたが、見つけられなかった。代わりに読めない算額がぶら下がっていた。[参考](http://www.wasan.jp/kyoto/kitano2.html)
+どうでも良い思い出：京都旅行中に、この問題を見に行ってみたが、見つけられなかった。[解読できない算額](http://www.wasan.jp/kyoto/kitano2.html)はぶら下がっていた。
