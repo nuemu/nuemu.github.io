@@ -7,6 +7,6 @@ services:
     container_name: jekyll
     volumes:
         - ./:/usr/blog
-    command: sh -c 'bundle exec jekyll serve --host 0.0.0.0'
+    command: sh -c 'bundle exec jekyll serve --host 0.0.0.0 --watch'
     ports:
       - '4000:4000'
