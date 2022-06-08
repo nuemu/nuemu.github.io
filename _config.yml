@@ -54,3 +54,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  blog_tags:
+    output: true
+    permalink: /tag/:name/
+    filepath: /tag
+    layout: tag_index

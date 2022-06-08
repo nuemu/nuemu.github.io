@@ -1,0 +1,18 @@
+---
+layout: page
+---
+<div class="page-content wc-container">
+  <div class="post">
+    <h2 class="post_title"><a href="{{ page.url | relative_url }}">{{ page.tag }}</a>のタグがついている投稿</h2>
+    <ol>
+      {% assign posts =  site.posts | where_exp:"post", "post.tags contains page.tag" %}
+      {% for post in posts %}
+        <li class="archive_list">
+          <a class="archive_list_article_link" href='{{ post.url | relative_url }}'>{{post.title}}</a>
+          <time>{{ post.date | date_to_string }}</time>
+          <p>{{post.description}}</p>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>

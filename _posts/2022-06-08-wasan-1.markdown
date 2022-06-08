@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "和算(北野天満宮　1)"
+date:   2022-06-08 02:45:50 +0000
+categories: jekyll update
+tags: 数学 和算
+---
+
+北野天満宮(京都府京都市)　1768年
+<script type="text/tikz">
+\begin{tikzpicture}
+  \draw (-0.45, 0) -> (3.6, 0);
+  \draw (0, 0.45) circle[radius=0.45];
+  \draw (0.6, 0.2) circle[radius=0.2];
+  \draw (1.8, 1.8) circle[radius=1.8];
+\end{tikzpicture}
+</script>
+試しに埋め込んだTikzJax
+
+ローカルではうまく表示されない。
