@@ -2,7 +2,6 @@
 layout: post
 title:  "和算(北野天満宮　1)"
 date:   2022-06-08 02:45:50 +0000
-categories: jekyll update
 tags: 数学 和算
 ---
 
@@ -15,13 +14,63 @@ tags: 数学 和算
 ><p></p>
 ><script type="text/tikz">
 \begin{tikzpicture}
-  \draw (-1, 0) -> (2, 0);
-  \draw (2, 0) -> (2, 2);
-  \draw (2, 2) -> (-1, 0);
-  \draw (1, 0.5) circle[x radius=1, y radius=0.5];
+  \draw (-2, 0) -> (4, 0);
+  \draw (4, 0) -> (4, 4);
+  \draw (4, 4) -> (-2, 0);
+  \draw (2, 1) circle[x radius=2, y radius=1];
 \end{tikzpicture}
 ></script>
 ></div>
 <p></p>
 
-どうでも良い思い出：京都旅行中に、この問題を見に行ってみたが、見つけられなかった。[解読できない算額](http://www.wasan.jp/kyoto/kitano2.html)はぶら下がっていた。
+<details>
+<summary>
+<strong>解</strong>
+</summary>
+長軸向を$\frac{b}{a}$倍してあげると、内接円の問題に変形される。ということで、記号を置き直して
+<p></p>
+<blockquote>
+問：下図のように直角三角形に内接する円の半径を$b$とする。
+直角三角形の底辺を$p$、高さを$q$とした時、$p$を$b,q$で表せ。
+<div style="display: flex; justify-content: center;">
+<p></p>
+<script type="text/tikz">
+\begin{tikzpicture}
+  \draw (-0.5, 0) -> (1, 0);
+  \draw (1, 0) -> (1, 2);
+  \draw (1, 2) -> (-0.5, 0);
+  \draw (0.5, 0.5) circle[x radius=0.5, y radius=0.5];
+\end{tikzpicture}
+</script>
+</div>
+</blockquote>
+<p></p>
+を解くことにする。この問題を解いて、$p$を元に戻せば解答に辿り着く。
+<p></p>
+さて、三平方の定理より
+$$
+\begin{aligned}
+\sqrt{p^2+q^2}&=(p-b)+(q-b)\\
+\Leftrightarrow
+p^2+q^2&=(p-b)^2+2(p-b)(q-b)+(q-b)^2\\
+\Leftrightarrow
+p^2+q^2&=p^2-2bp+b^2\\
+&+2pq-2b(p+q)+2b^2\\
+&+q^2-2qb+b^2\\
+\Leftrightarrow
+p&=\frac{2b(b-q)}{2b-q}
+\end{aligned}
+$$
+従って、$p\to p\frac{b}{a}$とすれば
+$$
+\begin{aligned}
+p\frac{b}{a}&=\frac{2b(b-q)}{2b-q}\\
+\therefore a&=\frac{p(q-2b)}{2(q-b)}
+\end{aligned}
+$$
+<p></p>
+<div style="text-align: right;">Q.E.D.</div>
+</details>
+
+<p></p>
+余談：京都旅行中に、この問題を見に行ってみたが、見つけられなかった。[解読できない算額](http://www.wasan.jp/kyoto/kitano2.html)はぶら下がっていたというオチのない思い出話。

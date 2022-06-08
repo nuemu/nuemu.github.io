@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Tikzが欲しい"
+title:  "TikZが欲しい"
 date:   2022-06-08 02:44:50 +0000
-categories: jekyll update
 tags: 雑記 日記
 ---
 
