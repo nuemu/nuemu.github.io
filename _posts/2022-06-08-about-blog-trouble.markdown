@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyllの感触"
 date:   2022-06-08 02:46:50 +0000
-tags: 雑記　日記
+tags: 雑記 日記
 ---
 
 ### Jekyll?
