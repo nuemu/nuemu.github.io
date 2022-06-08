@@ -19,3 +19,5 @@ tags: 数学 和算
   \draw (1, 0.5) circle[x radius=1, y radius=0.5];
 \end{tikzpicture}
 </script>
+
+どうでも良い思い出：京都旅行中に、この問題を見に行ってみたが、見つけられなかった。代わりに読めない算額がぶら下がっていた。[参考](http://www.wasan.jp/kyoto/kitano2.html)
