@@ -7,14 +7,15 @@ tags: 数学 和算
 ---
 
 北野天満宮(京都府京都市)　1768年
+
+> 問：下図のように直角三角形に内接する楕円の長軸の長さを$2a$、短軸の長さを$2b$とする。
+> 直角三角形の底辺を$p$、高さを$q$とした時、$a$を$b,p,q$で表せ。
+
 <script type="text/tikz">
 \begin{tikzpicture}
-  \draw (-0.45, 0) -> (3.6, 0);
-  \draw (0, 0.45) circle[radius=0.45];
-  \draw (0.6, 0.2) circle[radius=0.2];
-  \draw (1.8, 1.8) circle[radius=1.8];
+  \draw (-1, 0) -> (2, 0);
+  \draw (2, 0) -> (2, 2);
+  \draw (2, 2) -> (-1, 0);
+  \draw (1, 0.5) circle[x radius=1, y radius=0.5];
 \end{tikzpicture}
 </script>
-試しに埋め込んだTikzJax
-
-ローカルではうまく表示されない。
