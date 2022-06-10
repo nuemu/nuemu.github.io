@@ -1,13 +1,40 @@
 ---
 layout: post
-title:  "日本茶(1)(Draft)"
+title:  "木構造を描きたい"
 date:   2022-06-09 0:00:03 +0000
 tags: 歴史 茶
 ---
 
-参考：「日本茶のすべてがわかる本」
+### 標準のリスト
+- 茶
+  - 不発酵茶
+    - 蒸し製
+      - 煎茶
+        - 普通煎茶
+        - 深蒸し煎茶
+      - 玉露
+      - かぶせ茶
+      - 玉緑茶
+      - 碾茶
+        - 抹茶
+      - 番茶
+      - (再加工茶)
+        - 焙じ茶
+        - 玄米茶
+    - 釜炒り製
+      - 玉緑茶
+  - 半発酵茶
+    - 包種茶
+    - 烏龍茶
+  - 発酵茶
+    - 紅茶
+  - 後発酵茶
+    - 漬物茶
+    - 中国黒茶
 
-### 茶の分類木
+体裁を合わせにくい。MarkdownだとCSS効かせるのも面倒。
+
+### D3の分類木
 
 <div id="app"></div>
 
@@ -126,7 +153,7 @@ const DATA = {
 }
 
 const width = window.innerWidth;
-const height = window.innerHeight;
+const height = window.innerWidth;
 
 const tree = (data) => {
   const root = d3.hierarchy(data);
@@ -137,7 +164,7 @@ const tree = (data) => {
 
 const root = tree(DATA);
 
-const svg = d3.create("svg").attr("viewBox", [0, -100, width, height]);
+const svg = d3.create("svg").attr("viewBox", [0, -height/4, width, height]);
 
 const g = svg
   .append("g")
@@ -201,4 +228,34 @@ const clicked = (d) => {
 
 </script>
 
-d3...面倒だなぁ...
+色々調整はできるが、それゆえの面倒臭さを否めない。また、描画が遅い。
+
+### TikZ
+
+<div style="display: flex; justify-content: center;">
+<p></p>
+<script type="text/tikz">
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=30mm},
+  level 2/.style={sibling distance=10mm}
+]
+\node {Tea} [grow=right]
+  child { node {Unfermented tea}
+    child { node {} }
+    child { node {} }
+  }
+  child { node {Semi-fermented tea}
+    child { node {} }
+  }
+  child { node {Fermented tea}
+    child { node {} }
+  }
+  child { node {Post-fermented tea}
+    child { node {} }
+    child { node {} }
+  };
+\end{tikzpicture}
+</script>
+</div>
+
+調整は可能だが、有望ではないので適当に。英語なのは、日本語を混ぜ込めないため。TikZの仕様なのか、SVGの仕様なのか不明。文字コード変換で対応出来るとしても、tikz内でjsのコード無視されるので対応は厳しそう。生物の系統樹とかを書く分にはいいかもしれない。
