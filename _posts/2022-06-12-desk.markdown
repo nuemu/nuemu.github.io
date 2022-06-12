@@ -1,0 +1,91 @@
+---
+layout: post
+title:  "和算(幸宮神社)"
+date:   2022-06-12 0:00:00 +0000
+tags: 和算 数学
+---
+
+幸宮神社(群馬県高崎市)　1824年
+
+> 問：下図のように大・中・小の三つの接する円が存在する。
+>大円の半径が$36$、中円の半径が$9$とした時、小円の半径はいくらか。
+>
+><div style="display: flex; justify-content: center;">
+><p></p>
+><script type="text/tikz">
+\begin{tikzpicture}
+  \draw (-0.9, 0) -> (7.2, 0);
+  \draw (0, 0.9) circle[radius=0.9];
+  \draw (1.2, 0.4) circle[radius=0.4];
+  \draw (3.6, 3.6) circle[radius=3.6];
+\end{tikzpicture}
+></script>
+></div>
+<p></p>
+<details>
+<summary>
+<strong>
+  解
+</strong>
+</summary>
+まず、大円と中円の中心を２点として持つ、下図直角三角形の底辺の長さを求める。
+<div style="display: flex; justify-content: center;">
+<p></p>
+<script type="text/tikz">
+\begin{tikzpicture}
+  \draw (-0.9, 0) -> (7.2, 0);
+  \draw (0, 0.9) circle[radius=0.9];
+  \draw (1.2, 0.4) circle[radius=0.4];
+  \draw (3.6, 3.6) circle[radius=3.6];
+
+  \draw (3.6, 3.6) -> (3.6, 0.9);
+  \draw (3.6, 3.6) -> (0, 0.9);
+  \draw (0, 0.9) -> (3.6, 0.9);
+\end{tikzpicture}
+</script>
+</div>
+求めたい長さを$x$とおいて、三平方の定理より、
+$$
+\begin{aligned}
+(36+9)^2=(36-9)^2+x^2\\
+\Leftrightarrow x=\sqrt{((36+9)+(36-9))((36+9)-(36-9))}\\
+=9\sqrt{(5+3)(5-3)}=36
+\end{aligned}
+$$
+となる。
+<div style="display: flex; justify-content: center;">
+<p></p>
+<script type="text/tikz">
+\begin{tikzpicture}
+  \draw (-0.9, 0) -> (7.2, 0);
+  \draw (0, 0.9) circle[radius=0.9];
+  \draw (1.2, 0.4) circle[radius=0.4];
+  \draw (3.6, 3.6) circle[radius=3.6];
+
+  \draw (0, 0.9) -> (0, 0.4);
+  \draw (0, 0.9) -> (1.2, 0.4);
+
+  \draw (3.6, 3.6) -> (3.6, 0.4);
+  \draw (3.6, 3.6) -> (1.2, 0.4);
+
+  \draw (0, 0.4) -> (3.6, 0.4);
+\end{tikzpicture}
+</script>
+</div>
+<p></p>
+次に、小円の半径を$x$と置き、上図のような二つの直角三角形に三平方の定理を用いれば
+$$
+\begin{aligned}
+  \sqrt{(36+x)^2-(36-x)^2}+\sqrt{(9+x)^2-(9-x)^2}=36
+\end{aligned}
+$$
+が得られ、
+$$
+\begin{aligned}
+  \Leftrightarrow 12\sqrt{x}+6\sqrt{x}=36\\
+  \Leftrightarrow \sqrt{x}=2\\
+  \Leftrightarrow x=4
+\end{aligned}
+$$
+<div style="text-align: right;">$\Box$</div>
+</details>

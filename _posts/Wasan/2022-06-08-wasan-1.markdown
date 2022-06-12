@@ -69,7 +69,7 @@ p\frac{b}{a}&=\frac{2b(b-q)}{2b-q}\\
 \end{aligned}
 $$
 <p></p>
-<div style="text-align: right;">Q.E.D.</div>
+<div style="text-align: right;">$\Box$</div>
 </details>
 
 <p></p>
