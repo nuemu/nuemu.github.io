@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wilhelm Schickardの機械(Draft)"
-date:   2022-06-09 0:00:02 +0000
+date:   2022-06-13 0:00:00 +0000
 tags: IT考古学
 ---
 
